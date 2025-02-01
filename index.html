@@ -1,22 +1,45 @@
 <!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>replit</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+ 𝐃𝐈𝐀𝐕𝐎𝐋𝐎 
+  <script src="script.js"></script>
+</body>
+
+</html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>زيادة متابعين إنستغرام</title>
+    <title>Instagram Report</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="followers-container">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram Logo" class="logo">
-        <h2>زيادة متابعين إنستغرام</h2>
-        <form id="followerForm">
-            <input type="text" id="username" name="username" placeholder="اسم المستخدم على إنستغرام" required>
-            <button type="button" onclick="sendFollowerRequest()">زيادة المتابعين</button>
-        </form>
+
+    <div class="fake-report">
+        <h2>Report</h2>
+        <p class="removed-text">This account was removed. Here's what else you can do.</p>
+        <p class="desc">Thanks for reporting <span id="username">example_account</span>'s account. We removed it from Instagram because it goes against our Community Standards on hate speech or symbols.</p>
+        <a href="#" class="details-link">See report details</a>
+
+        <h3>Other tools that can help</h3>
+        <p class="help-text">Learn more about our Community Standards</p>
+        <p class="help-text">Get support</p>
     </div>
 
-    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <div class="input-box">
+        <input type="text" id="accountInput" placeholder="Enter Instagram username">
+        <button onclick="updateUsername()">Generate</button>
+    </div>
+
     <script src="script.js"></script>
 </body>
 </html>
